@@ -7,24 +7,24 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
 
-public class SignIn extends AppCompatActivity {
+public class SignUp extends AppCompatActivity {
 
-    EditText edtPhone, edtPwd;
-    Button btnSignIn;
+    EditText edtPhone, edtName, edtPwd;
+    Button btnSignUp;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_sign_in);
+        setContentView(R.layout.activity_sign_up);
         edtPhone = (EditText)findViewById(R.id.edtPhone);
         edtPwd = (EditText)findViewById(R.id.edtPwd);
+        edtName = (EditText)findViewById(R.id.edtName);
+        btnSignUp = (Button)findViewById(R.id.btnSignUp);
 
-        btnSignIn = (Button)findViewById(R.id.btnSignIn);
-
-        btnSignIn.setOnClickListener(new View.OnClickListener() {
+        btnSignUp.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                final ProgressDialog mDialog =new ProgressDialog(SignIn.this);
-                mDialog.setMessage("Authenticating...");
+                final ProgressDialog mDialog =new ProgressDialog(SignUp.this);
+                mDialog.setMessage("Registering Your Account...");
                 mDialog.show();
             }
         });

@@ -5,7 +5,7 @@
         xmlns:app="http://schemas.android.com/apk/res-auto"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        tools:context=".SignIn"
+        tools:context=".SignUp"
         android:background="@color/colorPrimary">
 
     <LinearLayout
@@ -28,6 +28,17 @@
                 android:inputType="phone"/>
 
         <EditText
+                android:id="@+id/edtName"
+                android:hint="Full Name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColorHint="@android:color/white"
+                android:textColor="@android:color/white"
+                android:text="Tom Cruise"
+                android:textSize="34sp"
+                android:inputType="textCapWords"
+        />
+        <EditText
                 android:id="@+id/edtPwd"
                 android:hint="Password"
                 android:layout_width="match_parent"
@@ -40,8 +51,8 @@
         />
     </LinearLayout>
     <Button
-            android:id="@+id/btnSignIn"
-            android:text="Sign In"
+            android:id="@+id/btnSignUp"
+            android:text="Sign Up"
             android:textColor="@android:color/white"
             android:layout_marginRight="8dp"
             android:layout_marginLeft="8dp"
