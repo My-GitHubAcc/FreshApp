@@ -16,16 +16,22 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content">
 
-        <EditText
-                android:id="@+id/edtPhone"
-                android:hint="Phone Number"
+        <android.support.design.widget.
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:textColorHint="@android:color/white"
-                android:textColor="@android:color/white"
-                android:text="0670037"
-                android:textSize="34sp"
-                android:inputType="phone"/>
+                android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar">
+            <EditText
+                    android:id="@+id/edtPhone"
+                    android:hint="Phone Number"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textColorHint="@android:color/white"
+                    android:textColor="@android:color/white"
+                    android:text="0670037"
+                    android:textSize="34sp"
+                    android:inputType="phone"/>
+        </android.support.design.widget.>
+
 
         <EditText
                 android:id="@+id/edtPwd"
